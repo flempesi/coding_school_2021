@@ -8,7 +8,7 @@ using WinFormsAppDotNet5.EF.Configuration;
 using WinFormsAppDotNet5.Model;
 
 namespace WinFormsAppDotNet5.EF.Context {
-    class UniAppContext : DbContext{
+    public class UniAppContext : DbContext{
         public UniAppContext() : base (){
 
         }
