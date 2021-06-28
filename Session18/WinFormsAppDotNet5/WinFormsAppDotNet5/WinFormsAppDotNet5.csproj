@@ -13,4 +13,9 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\WinFormsAppDotNet5.EF\WinFormsAppDotNet5.EF.csproj" />
+    <ProjectReference Include="..\WinFormsAppDotNet5.Model\WinFormsAppDotNet5.Model.csproj" />
+  </ItemGroup>
+
 </Project>
