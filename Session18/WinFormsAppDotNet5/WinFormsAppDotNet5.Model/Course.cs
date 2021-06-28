@@ -8,7 +8,7 @@ namespace WinFormsAppDotNet5.Model {
      public class Course : EntityBase{
         public string Title { get; set; }
         public string Category { get; set; }
-        public DateTime Date { get; set; }
+        public DateTime? Date { get; set; }
         public int Duration { get; set; }
        
     }

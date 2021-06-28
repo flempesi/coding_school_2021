@@ -10,8 +10,8 @@ using WinFormsAppDotNet5.EF.Context;
 namespace WinFormsAppDotNet5.EF.Migrations
 {
     [DbContext(typeof(UniAppContext))]
-    [Migration("20210628115157_Student")]
-    partial class Student
+    [Migration("20210628142729_student")]
+    partial class student
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -33,7 +33,7 @@ namespace WinFormsAppDotNet5.EF.Migrations
                         .HasMaxLength(250)
                         .HasColumnType("nvarchar(250)");
 
-                    b.Property<DateTime>("BirtDate")
+                    b.Property<DateTime?>("BirtDate")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Name")

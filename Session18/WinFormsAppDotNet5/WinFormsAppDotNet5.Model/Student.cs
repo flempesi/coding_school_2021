@@ -8,7 +8,7 @@ namespace WinFormsAppDotNet5.Model {
     public class Student :EntityBase {
         public string Name { get; set; }
         public string Surname { get; set; }
-        public DateTime BirtDate { get; set; }
+        public DateTime? BirtDate { get; set; }
         public string Address { get; set; }
         
     }

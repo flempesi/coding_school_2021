@@ -16,7 +16,7 @@ namespace WinFormsAppDotNet5.EF.Configuration  {
             builder.Property(student => student.Id).ValueGeneratedOnAdd();
             builder.Property(student => student.Name).HasMaxLength(200).IsRequired(true);
             builder.Property(student => student.Surname).HasMaxLength(200).IsRequired(true);
-            builder.Property(student => student.BirtDate).IsRequired(true);
+            builder.Property(student => student.BirtDate).IsRequired(false);
             builder.Property(student => student.Address).HasMaxLength(250).IsRequired(true);
         }
     }
