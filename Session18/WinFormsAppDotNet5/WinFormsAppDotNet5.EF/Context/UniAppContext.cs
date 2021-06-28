@@ -24,12 +24,14 @@ namespace WinFormsAppDotNet5.EF.Context {
 
         protected override void OnModelCreating(ModelBuilder modelBuilder) {
             modelBuilder.ApplyConfiguration(new StudentConfiguration());
-           
+            modelBuilder.ApplyConfiguration(new CourseConfiguration());
+
             base.OnModelCreating(modelBuilder);
         }
 
         public DbSet<Student> Students { get; set; }
-        
+        public DbSet<Student> Courses { get; set; }
+
 
 
     }
