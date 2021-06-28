@@ -32,6 +32,7 @@ namespace WinFormsAppDotNet5 {
     public partial class CourseForm : Form {
 
         private UniAppContext _uniContext;
+        //DateTimePicker dtp = new DateTimePicker();
         public CourseForm() {
             InitializeComponent();
 
@@ -40,14 +41,16 @@ namespace WinFormsAppDotNet5 {
             dataGridView1.AutoGenerateColumns = false;
             dataGridView1.Columns.Add(new DataGridViewTextBoxColumn() { DataPropertyName = "Title", HeaderText = "Title" });
             dataGridView1.Columns.Add(new DataGridViewTextBoxColumn() { DataPropertyName = "Category", HeaderText = "Category" });
-            //dataGridView1.Columns.Add(new DataGridViewDateTimePickerColumn() { DataPropertyName = "Date", HeaderText = "Date" });
+            dataGridView1.Columns.Add(new DataGridViewTextBoxColumn() { DataPropertyName = "Date", HeaderText = "Date" });
+
+
             dataGridView1.Columns.Add(new DataGridViewTextBoxColumn() { DataPropertyName = "Duration", HeaderText = "Duration" });
 
             dataGridView1.DataSource = bindingSource1;
 
             ctrlTitle.DataBindings.Add("Text", bindingSource1, "Title");
             ctrlCategory.DataBindings.Add("Text", bindingSource1, "Category");
-            //ctrlDate.DataBindings.Add("DateTime", bindingSource1, "Date");
+            ctrlDate.DataBindings.Add("Text", bindingSource1, "Date");
             ctrlDuration.DataBindings.Add("Text", bindingSource1, "Duration");
 
 

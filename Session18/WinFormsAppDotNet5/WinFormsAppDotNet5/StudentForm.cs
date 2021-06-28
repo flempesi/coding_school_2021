@@ -23,14 +23,14 @@ namespace WinFormsAppDotNet5 {
             dataGridView1.AutoGenerateColumns = false;
             dataGridView1.Columns.Add(new DataGridViewTextBoxColumn() { DataPropertyName = "Name", HeaderText = "Name" });
             dataGridView1.Columns.Add(new DataGridViewTextBoxColumn() { DataPropertyName = "Surname", HeaderText = "Surname" });
-            //dataGridView1.Columns.Add(new DataGridViewDateTimePickerColumn() { DataPropertyName = "BirtDate", HeaderText = "BirtDate" });
+           dataGridView1.Columns.Add(new DataGridViewTextBoxColumn() { DataPropertyName = "BirtDate", HeaderText = "BirtDate" });
             dataGridView1.Columns.Add(new DataGridViewTextBoxColumn() { DataPropertyName = "Address", HeaderText = "Address" });
             
             dataGridView1.DataSource = bindingSource1;
 
             ctrlName.DataBindings.Add("Text", bindingSource1, "Name");
             ctrlSurname.DataBindings.Add("Text", bindingSource1, "Surname");
-            //ctrlBirthDate.DataBindings.Add("DateTime", bindingSource1, "BirthDate");
+            ctrlBirthDate.DataBindings.Add("Text", bindingSource1, "BirtDate");
             ctrlAddress.DataBindings.Add("Text", bindingSource1, "Address");
 
            
@@ -79,8 +79,8 @@ namespace WinFormsAppDotNet5 {
         private void RefreshStudents() {
             bindingSource1.Clear();
             _uniContext.ChangeTracker.Clear();
-            foreach (var todo in _uniContext.Students.ToList()) {
-                bindingSource1.Add(todo);
+            foreach (var student in _uniContext.Students.ToList()) {
+                bindingSource1.Add(student);
             }
         }
 
