@@ -66,7 +66,7 @@ namespace WinFormsAppDotNet5 {
             await _uniContext.SaveChangesAsync();
         }
 
-        private void Form1_FormClosed(object sender, FormClosedEventArgs e) {
+        private void StudentForm_FormClosed(object sender, FormClosedEventArgs e) {
             _uniContext.Dispose();
         }
 
@@ -84,6 +84,5 @@ namespace WinFormsAppDotNet5 {
             }
         }
 
-      
     }
 }

@@ -30,7 +30,7 @@ namespace WinFormsAppDotNet5.EF.Context {
         }
 
         public DbSet<Student> Students { get; set; }
-        public DbSet<Student> Courses { get; set; }
+        public DbSet<Course> Courses { get; set; }
 
 
 

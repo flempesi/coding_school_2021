@@ -178,6 +178,7 @@ namespace WinFormsAppDotNet5 {
             this.Controls.Add(this.dataGridView1);
             this.Name = "StudentForm";
             this.Text = "StudentForm";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.StudentForm_FormClosed);
             this.Load += new System.EventHandler(this.StudentForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
