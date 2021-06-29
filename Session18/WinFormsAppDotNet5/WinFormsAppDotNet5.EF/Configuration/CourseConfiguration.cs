@@ -20,6 +20,7 @@ namespace WinFormsAppDotNet5.EF.Configuration {
             builder.Property(course => course.Duration).IsRequired(true);
 
 
-         }
+
+        }
     }
 }

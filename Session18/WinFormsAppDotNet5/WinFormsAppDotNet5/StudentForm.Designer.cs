@@ -31,7 +31,6 @@ namespace WinFormsAppDotNet5 {
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
             this.btnRefresh = new System.Windows.Forms.Button();
-            this.ctrlBirthDate = new System.Windows.Forms.DateTimePicker();
             this.ctrlName = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -39,6 +38,7 @@ namespace WinFormsAppDotNet5 {
             this.label4 = new System.Windows.Forms.Label();
             this.ctrlSurname = new System.Windows.Forms.TextBox();
             this.ctrlAddress = new System.Windows.Forms.TextBox();
+            this.ctrlBirthDate = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             this.SuspendLayout();
@@ -92,13 +92,6 @@ namespace WinFormsAppDotNet5 {
             this.btnRefresh.Text = "Refresh";
             this.btnRefresh.UseVisualStyleBackColor = true;
             this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
-            // 
-            // ctrlBirthDate
-            // 
-            this.ctrlBirthDate.Location = new System.Drawing.Point(566, 229);
-            this.ctrlBirthDate.Name = "ctrlBirthDate";
-            this.ctrlBirthDate.Size = new System.Drawing.Size(212, 27);
-            this.ctrlBirthDate.TabIndex = 5;
             // 
             // ctrlName
             // 
@@ -157,11 +150,19 @@ namespace WinFormsAppDotNet5 {
             this.ctrlAddress.Size = new System.Drawing.Size(212, 27);
             this.ctrlAddress.TabIndex = 12;
             // 
+            // ctrlBirthDate
+            // 
+            this.ctrlBirthDate.Location = new System.Drawing.Point(538, 229);
+            this.ctrlBirthDate.Name = "ctrlBirthDate";
+            this.ctrlBirthDate.Size = new System.Drawing.Size(250, 27);
+            this.ctrlBirthDate.TabIndex = 13;
+            // 
             // StudentForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.ctrlBirthDate);
             this.Controls.Add(this.ctrlAddress);
             this.Controls.Add(this.ctrlSurname);
             this.Controls.Add(this.label4);
@@ -169,7 +170,6 @@ namespace WinFormsAppDotNet5 {
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.ctrlName);
-            this.Controls.Add(this.ctrlBirthDate);
             this.Controls.Add(this.btnRefresh);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.btnDelete);
@@ -194,7 +194,6 @@ namespace WinFormsAppDotNet5 {
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.Button btnRefresh;
-        private System.Windows.Forms.DateTimePicker ctrlBirthDate;
         private System.Windows.Forms.TextBox ctrlName;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
@@ -202,6 +201,7 @@ namespace WinFormsAppDotNet5 {
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox ctrlSurname;
         private System.Windows.Forms.TextBox ctrlAddress;
+        private System.Windows.Forms.DateTimePicker ctrlBirthDate;
     }
 }
 

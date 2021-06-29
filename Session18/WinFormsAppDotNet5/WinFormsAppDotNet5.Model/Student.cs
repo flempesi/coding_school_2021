@@ -10,9 +10,11 @@ namespace WinFormsAppDotNet5.Model {
         public string Surname { get; set; }
         public DateTime? BirtDate { get; set; }
         public string Address { get; set; }
-       public Student() {
+      
+        public ICollection<StudentCourse> StudentsCourses { get; set; }
+        public Student() {
             BirtDate = new DateTime(1990, 1, 1);
         }
-
+       
     }
 }

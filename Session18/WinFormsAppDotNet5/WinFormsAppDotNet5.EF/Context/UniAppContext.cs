@@ -18,8 +18,8 @@ namespace WinFormsAppDotNet5.EF.Context {
         }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) {
-            optionsBuilder.UseSqlServer(@"Data Source = (localdb)\MSSQLLocalDB; Initial Catalog = DBSession18; Integrated Security = True; Connect Timeout = 30; Encrypt = False; TrustServerCertificate = False; ApplicationIntent = ReadWrite; MultiSubnetFailover = False");
-            //optionsBuilder.UseSqlServer(@"Server =localhost\SQLEXPRESS;Database=WinFormAppDotNet5DB;Trusted_Connection=True;");
+            //optionsBuilder.UseSqlServer(@"Data Source = (localdb)\MSSQLLocalDB; Initial Catalog = DBSession18; Integrated Security = True; Connect Timeout = 30; Encrypt = False; TrustServerCertificate = False; ApplicationIntent = ReadWrite; MultiSubnetFailover = False");
+            optionsBuilder.UseSqlServer(@"Server =localhost\SQLEXPRESS;Database=WinFormAppDotNet5DB;Trusted_Connection=True;");
             base.OnConfiguring(optionsBuilder);
         }
 
@@ -32,6 +32,10 @@ namespace WinFormsAppDotNet5.EF.Context {
 
         public DbSet<Student> Students { get; set; }
         public DbSet<Course> Courses { get; set; }
+
+        public DbSet<StudentCourse> StudentsCourses { get; set; }
+
+
 
 
 

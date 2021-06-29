@@ -59,6 +59,7 @@ namespace WinFormsAppDotNet5 {
         private void CourseForm_Load(object sender, EventArgs e) {
             var optionsBuilder = new DbContextOptionsBuilder<UniAppContext>();
             optionsBuilder.UseSqlServer(@"Server=localhost\SQLEXPRESS;Database=WinFormAppDotNet5DB;Trusted_Connection=True;");
+            //optionsBuilder.UseSqlServer(@"Data Source = (localdb)\MSSQLLocalDB; Initial Catalog = DBSession18; Integrated Security = True; Connect Timeout = 30; Encrypt = False; TrustServerCertificate = False; ApplicationIntent = ReadWrite; MultiSubnetFailover = False");
 
             _uniContext = new UniAppContext(optionsBuilder.Options);
             //Refresh();
