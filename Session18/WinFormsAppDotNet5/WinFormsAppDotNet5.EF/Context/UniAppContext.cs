@@ -26,6 +26,7 @@ namespace WinFormsAppDotNet5.EF.Context {
         protected override void OnModelCreating(ModelBuilder modelBuilder) {
             modelBuilder.ApplyConfiguration(new StudentConfiguration());
             modelBuilder.ApplyConfiguration(new CourseConfiguration());
+            modelBuilder.ApplyConfiguration(new StudentCourseConfiguration());
 
             base.OnModelCreating(modelBuilder);
         }
