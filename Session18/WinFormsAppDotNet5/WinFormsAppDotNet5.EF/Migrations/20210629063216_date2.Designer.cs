@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using WinFormsAppDotNet5.EF.Context;
 
 namespace WinFormsAppDotNet5.EF.Migrations
 {
     [DbContext(typeof(UniAppContext))]
-    partial class UniAppContextModelSnapshot : ModelSnapshot
+    [Migration("20210629063216_date2")]
+    partial class date2
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

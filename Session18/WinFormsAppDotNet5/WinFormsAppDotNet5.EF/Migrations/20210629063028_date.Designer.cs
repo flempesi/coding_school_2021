@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using WinFormsAppDotNet5.EF.Context;
 
 namespace WinFormsAppDotNet5.EF.Migrations
 {
     [DbContext(typeof(UniAppContext))]
-    partial class UniAppContextModelSnapshot : ModelSnapshot
+    [Migration("20210629063028_date")]
+    partial class date
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -62,9 +64,7 @@ namespace WinFormsAppDotNet5.EF.Migrations
                         .HasColumnType("nvarchar(250)");
 
                     b.Property<DateTime?>("BirtDate")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("datetime2")
-                        .HasDefaultValue(new DateTime(1990, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified));
+                        .HasColumnType("datetime2");
 
                     b.Property<string>("Name")
                         .IsRequired()

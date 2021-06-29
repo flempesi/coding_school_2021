@@ -16,7 +16,7 @@ namespace WinFormsAppDotNet5.EF.Configuration {
             builder.Property(course => course.Id).ValueGeneratedOnAdd();
             builder.Property(course => course.Title).HasMaxLength(200).IsRequired(true);
             builder.Property(course => course.Category).HasMaxLength(200).IsRequired(true);
-            builder.Property(course => course.Date).IsRequired(false);
+            builder.Property(course => course.Date).IsRequired(false).HasDefaultValue(new DateTime(1990,1,1));
             builder.Property(course => course.Duration).IsRequired(true);
 
 

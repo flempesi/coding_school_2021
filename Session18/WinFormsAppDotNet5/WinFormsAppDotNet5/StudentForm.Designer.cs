@@ -95,7 +95,6 @@ namespace WinFormsAppDotNet5 {
             // 
             // ctrlBirthDate
             // 
-            this.ctrlBirthDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.ctrlBirthDate.Location = new System.Drawing.Point(566, 229);
             this.ctrlBirthDate.Name = "ctrlBirthDate";
             this.ctrlBirthDate.Size = new System.Drawing.Size(212, 27);

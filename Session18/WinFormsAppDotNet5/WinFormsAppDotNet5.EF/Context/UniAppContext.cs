@@ -18,7 +18,8 @@ namespace WinFormsAppDotNet5.EF.Context {
         }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) {
-            optionsBuilder.UseSqlServer(@"Server=localhost\SQLEXPRESS;Database=WinFormAppDotNet5DB;Trusted_Connection=True;");
+            optionsBuilder.UseSqlServer(@"Data Source = (localdb)\MSSQLLocalDB; Initial Catalog = DBSession18; Integrated Security = True; Connect Timeout = 30; Encrypt = False; TrustServerCertificate = False; ApplicationIntent = ReadWrite; MultiSubnetFailover = False");
+            //optionsBuilder.UseSqlServer(@"Server =localhost\SQLEXPRESS;Database=WinFormAppDotNet5DB;Trusted_Connection=True;");
             base.OnConfiguring(optionsBuilder);
         }
 
