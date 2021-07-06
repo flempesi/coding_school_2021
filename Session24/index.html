@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Session24</title>
+</head>
+
+<body>
+
+    <form action="#" method="POST">
+        <div class="container column" id="upper">
+            <label>Επεξεργασία Client</label>
+            <br>
+            <div>
+                <button id="save" class="btn"><i class="fa fa-save"></i></button>
+                <button id="back" class="btn"><i class="fa fa-arrow-left"></i></button>
+            </div>
+            <!-- <input type="submit" value="Save">
+            <input type="button" value="Back"> -->
+        </div>
+        <hr>
+        <div class="container column flex-wrap" id="down">
+            <div id="down-up" class="container row">
+
+
+                <div class="container column" id="up-left">
+                    <div class="element-row">
+                        <label for="Client-id">Client-id</label>
+                        <input type="text" id="Client-id" placeholder="dcprojects_Client">
+                    </div>
+                    <div class="element-row">
+                        <label for="type">Τύπος</label>
+                        <select name="type" id="type">
+                            <option value="authCode">AuthCode</option>
+                            <option value="noAuthCode">NoAuthCode</option>
+                        </select>
+                    </div>
+                    <div class="element-row">
+                        <label for="origin">Προέλευση</label>
+                        <select name="origin" id="origin">
+                            <option value="system">System</option>
+                            <option value="window">Window</option>
+                        </select>
+                    </div>
+                    <div class="element-row">
+                        <label for="apiResourses">Api Resourses</label>
+                        <input type="text" id="apiResourses">
+                    </div>
+                </div>
+                <div class="container column " id="up-right">
+                    <div class="element-row">
+                        <label for="Name">Όνομα</label>
+                        <input type="text" id="Name" placeholder="dcprojects_Client">
+                    </div>
+                    <div class="element-row">
+                        <label for="enable">Ενεργό</label>
+                        <input type="checkbox" id="enable">
+                    </div>
+                    <div class="element-row">
+                        <label for="install">Εγκατάσταση</label>
+                        <select name="install" id="install">
+                            <option value="tenant0">tenant0</option>
+                            <option value="tenant1">tenant1</option>
+                        </select>
+                    </div>
+                    <div class="element-row">
+                        <label for="secret">Secret</label>
+                        <input type="text" id="secret" placeholder="dcprojects_Client">
+                    </div>
+                </div>
+            </div>
+            <div id="down-down" class="container row">
+                <div class="container column" id="down-left">
+                    <div class="element-row">
+                        <label for="createdBy">Δημιουργήθηκε από</label>
+                        <input type="text" id="createdBy" readonly class="grey">
+                    </div>
+                    <div class="element-row">
+                        <label for="updatedBy">Ενημερώθηκε από</label>
+                        <input type="text" id="updatedBy" readonly class="grey">
+
+                    </div>
+                </div>
+                <div class="container column" id="down-right">
+                    <div class="element-row">
+                        <label for="creationdate">Ημερομηνία δημιουργίας</label>
+                        <input type="text" id="creationdate" readonly class="grey">
+                    </div>
+
+                    <div class="element-row">
+                        <label for="updatedate">Ημερομηνία ενημέρωσης</label>
+                        <input type="text" id="updatedate" readonly class="grey">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </form>
+</body>
+
+</html>
