@@ -1,0 +1,48 @@
+﻿@page
+@model Session25.Pages.ListModel
+@{
+}
+
+<a href="/Edit/0">Add New</a>
+<ul id="lstList">
+    @foreach (var item in Model.Items)
+    {
+        <li>@item.Name</li>
+    }
+</ul>
+
+<table>
+    <thead>
+        <tr>
+            <th>
+                Id
+            </th>
+            <th>
+                Name
+            </th>
+            <th>
+                Surname
+            </th>
+            <th>
+                AFM
+            </th>
+            <th>
+                Active
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Items)
+        {
+        <tr>
+            <td>@item.Id</td>
+            <td>@item.Name</td>
+            <td>@item.Surname</td>
+            <td>@item.AFM</td>
+            <td>@item.Active</td>
+            <td><a href="Edit/@item.Id">Edit</a></td>
+        </tr>
+        }
+    </tbody>
+</table>

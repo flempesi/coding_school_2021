@@ -1,0 +1,39 @@
+﻿@page "{id}"
+@model Session25.Pages.EditModel
+@{
+}
+
+
+<div>
+    <form id="frmMain" method="post">
+        <input id="txtSelectedId" type="hidden" value="@Model.SelectedListItem.Id">
+        <table>
+            <tr>
+                <td><label for="txtName">Name</label></td>
+                <td><input id="txtName" name="name" value="@Model.SelectedListItem.Name" required></td>
+            </tr>
+            <tr>
+                <td><label for="txtSurname">Surname</label></td>
+                <td><input id="txtSurname" name="Surname" value="@Model.SelectedListItem.Surname" required></td>
+            </tr>
+            <tr>
+                <td><label for="txtAFM">AFM</label></td>
+                <td><input id="txtAFM" name="AFM" value="@Model.SelectedListItem.AFM" maxlength="9"></td>
+            </tr>
+            <tr>
+                <td><label for="txtActive">Active</label></td>
+                <td><input type="checkbox" id="txtActive" name="Active" value="@Model.SelectedListItem.Active"></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <div style="display: flex">
+                        <button class="btn btn-warning" asp-page-handler="cancel">Cancel</button>
+                        @if (Model.SelectedListItem.Id > 0) {
+            <button class="btn btn-danger" asp-page-handler="delete">Delete</button>}
+                        <button class="btn btn-success" type="submit">Save</button>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
