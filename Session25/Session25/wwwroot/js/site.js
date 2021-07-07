@@ -4,11 +4,13 @@
 // Write your JavaScript code.
 function CheckboxFunction() {
     var checkBox = document.getElementById("checkActive");
-     
+   
     if (checkBox.checked == true) {
-        Model.SelectedListItem.Active=true;
+        //Model.SelectedListItem.Active=true;
+
+        console.log(checkBox.checked);
     } else {
-        Model.SelectedListItem.Active=false;
+       // Model.SelectedListItem.Active=false;
     }
  
 }
