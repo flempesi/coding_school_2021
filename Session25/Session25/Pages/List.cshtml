@@ -4,14 +4,14 @@
 }
 
 <a href="/Edit/0">Add New</a>
-<ul id="lstList">
+@*<ul id="lstList">
     @foreach (var item in Model.Items)
     {
         <li>@item.Name</li>
     }
-</ul>
+</ul>*@
 
-<table>
+<table id="customers-table">
     <thead>
         <tr>
             <th>
@@ -29,7 +29,9 @@
             <th>
                 Active
             </th>
-            <th></th>
+            <th>
+                
+            </th>
         </tr>
     </thead>
     <tbody>

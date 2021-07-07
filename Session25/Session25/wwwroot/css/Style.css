@@ -1,0 +1,25 @@
+﻿#customers-table {
+    font-family: sans-serif;
+    border-collapse: collapse;
+    width: 50%;
+}
+#customers-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#customers-table tr:nth-child(even) {
+   background-color: #f2f2f2;
+}
+
+    #customers-table tr:hover {
+        background-color: #6a9dbe;
+    }
+
+    #customers-table th {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        text-align: left;
+        background-color: #6a9dbe;
+        color: white;
+    }

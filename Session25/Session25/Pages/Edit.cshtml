@@ -7,7 +7,7 @@
 <div>
     <form id="frmMain" method="post">
         <input id="txtSelectedId" type="hidden" value="@Model.SelectedListItem.Id">
-        <table>
+        <table >
             <tr>
                 <td><label for="txtName">Name</label></td>
                 <td><input id="txtName" name="name" value="@Model.SelectedListItem.Name" required></td>
@@ -22,7 +22,12 @@
             </tr>
             <tr>
                 <td><label for="txtActive">Active</label></td>
-                <td><input type="checkbox" id="txtActive" name="Active" value="@Model.SelectedListItem.Active"></td>
+                <td>
+                    <select  id="txtActive">
+                        <option  value="@Model.SelectedListItem.Active">Yes</option>
+                        <option  value="@Model.SelectedListItem.Active">No</option>
+                    </select>
+                </td>
             </tr>
             <tr>
                 <td colspan="2">
@@ -37,3 +42,4 @@
         </table>
     </form>
 </div>
+< 
