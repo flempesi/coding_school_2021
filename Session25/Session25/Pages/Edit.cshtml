@@ -23,10 +23,19 @@
             <tr>
                 <td><label for="txtActive">Active</label></td>
                 <td>
-                    <select  id="txtActive">
-                        <option  value="@Model.SelectedListItem.Active">Yes</option>
-                        <option  value="@Model.SelectedListItem.Active">No</option>
-                    </select>
+                    @if (Model.SelectedListItem.Id > 0) {
+                <input type="checkbox" onclick="CheckboxFunction()" id="checkActive" name="Active" value="@Model.SelectedListItem.Active">}
+                    else {
+                    <input type="checkbox" onclick="CheckboxFunction()" id="checkActive" name="Active" >
+                        @*@Model.SelectedListItem.Active= true;*@
+                    }
+                    @*//@Model.SelectedListItem.Active*@
+                    
+                    @*<select  id="txtActive">
+            <option  value="@Model.SelectedListItem.Active">Yes</option>
+            <option  value="@Model.SelectedListItem.Active">No</option>
+        </select>*@
+
                 </td>
             </tr>
             <tr>
@@ -42,4 +51,3 @@
         </table>
     </form>
 </div>
-< 
