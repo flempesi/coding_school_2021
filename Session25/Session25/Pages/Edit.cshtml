@@ -10,22 +10,21 @@
         <table >
             <tr>
                 <td><label for="txtName">Name</label></td>
-                <td><input id="txtName" name="name" value="@Model.SelectedListItem.Name" required></td>
+                <td><input id="txtName" name="SelectedListItem.Name" value="@Model.SelectedListItem.Name" required></td>
             </tr>
             <tr>
                 <td><label for="txtSurname">Surname</label></td>
-                <td><input id="txtSurname" name="Surname" value="@Model.SelectedListItem.Surname" required></td>
+                <td><input id="txtSurname" name="SelectedListItem.Surname" value="@Model.SelectedListItem.Surname" required></td>
             </tr>
             <tr>
                 <td><label for="txtAFM">AFM</label></td>
-                <td><input id="txtAFM" name="AFM" value="@Model.SelectedListItem.AFM" maxlength="9"></td>
+                <td><input id="txtAFM" name="SelectedListItem.AFM" value="@Model.SelectedListItem.AFM" maxlength="9"></td>
             </tr>
             <tr>
                 <td><label for="txtActive">Active</label></td>
                 <td>
                    
-                @*<input type="checkbox" onclick="CheckboxFunction()" id="checkActive" name="Active" value="@Model.SelectedListItem.Active">*@
-                    <input type="checkbox"  id="checkActive" name="Active" value="true">
+                    @Html.CheckBoxFor(x => x.SelectedListItem.Active)
 
                 </td>
             </tr>
